@@ -1,11 +1,4 @@
 # Coinbase Wallet PHP Library
-
-[![Build Status](https://travis-ci.org/coinbase/coinbase-php.svg)](https://travis-ci.org/coinbase/coinbase-php)
-[![Latest Stable Version](https://poser.pugx.org/coinbase/coinbase/v/stable)](https://packagist.org/packages/coinbase/coinbase)
-[![Total Downloads](https://poser.pugx.org/coinbase/coinbase/downloads)](https://packagist.org/packages/coinbase/coinbase)
-[![Latest Unstable Version](https://poser.pugx.org/coinbase/coinbase/v/unstable)](https://packagist.org/packages/coinbase/coinbase)
-[![License](https://poser.pugx.org/coinbase/coinbase/license)](https://packagist.org/packages/coinbase/coinbase)
-
 This is the official client library for the [Coinbase Wallet API v2][1]. We
 provide an intuitive, stable interface to integrate Coinbase Wallet into your
 PHP project.
