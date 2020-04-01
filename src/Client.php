@@ -1,28 +1,28 @@
 <?php
 
-namespace Codew47\Wallet;
+namespace Blockchain\Wallet;
 
-use Codew47\Wallet\ActiveRecord\ActiveRecordContext;
-use Codew47\Wallet\Enum\Param;
-use Codew47\Wallet\Resource\Account;
-use Codew47\Wallet\Resource\Address;
-use Codew47\Wallet\Resource\Buy;
-use Codew47\Wallet\Resource\Checkout;
-use Codew47\Wallet\Resource\CurrentUser;
-use Codew47\Wallet\Resource\Deposit;
-use Codew47\Wallet\Resource\Merchant;
-use Codew47\Wallet\Resource\Order;
-use Codew47\Wallet\Resource\PaymentMethod;
-use Codew47\Wallet\Resource\Resource;
-use Codew47\Wallet\Resource\ResourceCollection;
-use Codew47\Wallet\Resource\Sell;
-use Codew47\Wallet\Resource\Transaction;
-use Codew47\Wallet\Resource\User;
-use Codew47\Wallet\Resource\Withdrawal;
-use Codew47\Wallet\Resource\Notification;
+use Blockchain\Wallet\ActiveRecord\ActiveRecordContext;
+use Blockchain\Wallet\Enum\Param;
+use Blockchain\Wallet\Resource\Account;
+use Blockchain\Wallet\Resource\Address;
+use Blockchain\Wallet\Resource\Buy;
+use Blockchain\Wallet\Resource\Checkout;
+use Blockchain\Wallet\Resource\CurrentUser;
+use Blockchain\Wallet\Resource\Deposit;
+use Blockchain\Wallet\Resource\Merchant;
+use Blockchain\Wallet\Resource\Order;
+use Blockchain\Wallet\Resource\PaymentMethod;
+use Blockchain\Wallet\Resource\Resource;
+use Blockchain\Wallet\Resource\ResourceCollection;
+use Blockchain\Wallet\Resource\Sell;
+use Blockchain\Wallet\Resource\Transaction;
+use Blockchain\Wallet\Resource\User;
+use Blockchain\Wallet\Resource\Withdrawal;
+use Blockchain\Wallet\Resource\Notification;
 
 /**
- * A client for interacting with the Codew47 API.
+ * A client for interacting with the Coinbase API.
  *
  * All methods marked as supporting pagination parameters support the following
  * parameters:
@@ -33,7 +33,7 @@ use Codew47\Wallet\Resource\Notification;
  *  * ending_before (string)
  *  * fetch_all (Boolean)
  *
- * @link https://developers.Codew47.com/api/v2
+ * @link https://developers.coinbase.com/api/v2
  */
 class Client
 {
@@ -43,9 +43,9 @@ class Client
     private $mapper;
 
     /**
-     * Creates a new Codew47 client.
+     * Creates a new Coinbase client.
      *
-     * @return Client A new Codew47 client
+     * @return Client A new Coinbase client
      */
     public static function create(Configuration $configuration)
     {
@@ -747,7 +747,7 @@ class Client
     }
 
     /**
-     * Verifies the authenticity of a merchant callback from Codew47
+     * Verifies the authenticity of a merchant callback from Coinbase
      *
      * @return Boolean
      */
@@ -823,7 +823,7 @@ EOD;
     }
 
     /** @return ResourceCollection|Resource[] */
-    public function getAndMapCollection($path, array $params, $mapperMethod)
+    private function getAndMapCollection($path, array $params, $mapperMethod)
     {
         $fetchAll = isset($params[Param::FETCH_ALL]) ? $params[Param::FETCH_ALL] : false;
         unset($params[Param::FETCH_ALL]);
@@ -857,7 +857,7 @@ EOD;
         return $this->mapper->$mapperMethod($response, $resource);
     }
 
-    public function loadNext(ResourceCollection $collection, array $params, $mapperMethod)
+    private function loadNext(ResourceCollection $collection, array $params, $mapperMethod)
     {
         $response = $this->http->get($collection->getNextUri(), $params);
         $nextPage = $this->mapper->$mapperMethod($response);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
 class Resource
 {

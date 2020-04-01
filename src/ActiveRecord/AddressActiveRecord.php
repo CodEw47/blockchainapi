@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\ActiveRecord;
+namespace Blockchain\Wallet\ActiveRecord;
 
-use Codew47\Wallet\Resource\ResourceCollection;
-use Codew47\Wallet\Resource\Transaction;
+use Blockchain\Wallet\Resource\ResourceCollection;
+use Blockchain\Wallet\Resource\Transaction;
 
 trait AddressActiveRecord
 {

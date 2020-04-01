@@ -1,6 +1,6 @@
 <?php
 
-namespace Codew47\Wallet\Enum;
+namespace Blockchain\Wallet\Enum;
 
 /**
  * Supported notification types

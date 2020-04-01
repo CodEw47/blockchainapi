@@ -1,10 +1,10 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\PaymentMethodActiveRecord;
-use Codew47\Wallet\Enum\PaymentMethodType;
-use Codew47\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\ActiveRecord\PaymentMethodActiveRecord;
+use Blockchain\Wallet\Enum\PaymentMethodType;
+use Blockchain\Wallet\Enum\ResourceType;
 
 class PaymentMethod extends Resource
 {

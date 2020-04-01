@@ -1,6 +1,6 @@
 <?php
 
-namespace Coinbase\Wallet\Exception;
+namespace Blockchain\Wallet\Exception;
 
 class InvalidScopeException extends HttpException
 {

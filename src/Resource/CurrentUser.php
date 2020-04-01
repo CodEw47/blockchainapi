@@ -1,8 +1,8 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\CurrentUserActiveRecord;
+use Blockchain\Wallet\ActiveRecord\CurrentUserActiveRecord;
 
 class CurrentUser extends User
 {

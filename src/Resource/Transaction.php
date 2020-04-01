@@ -1,14 +1,14 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\TransactionActiveRecord;
-use Codew47\Wallet\Enum\CurrencyCode;
-use Codew47\Wallet\Enum\ResourceType;
-use Codew47\Wallet\Enum\TransactionStatus;
-use Codew47\Wallet\Enum\TransactionType;
-use Codew47\Wallet\Value\Money;
-use Codew47\Wallet\Value\Network;
+use Blockchain\Wallet\ActiveRecord\TransactionActiveRecord;
+use Blockchain\Wallet\Enum\CurrencyCode;
+use Blockchain\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\Enum\TransactionStatus;
+use Blockchain\Wallet\Enum\TransactionType;
+use Blockchain\Wallet\Value\Money;
+use Blockchain\Wallet\Value\Network;
 
 class Transaction extends Resource
 {

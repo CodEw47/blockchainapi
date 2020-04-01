@@ -1,8 +1,8 @@
 <?php
 
-namespace Codew47\Wallet\ActiveRecord;
+namespace Blockchain\Wallet\ActiveRecord;
 
-trait SellActiveRecord
+trait SellActiveRecord 
 {
     use BaseActiveRecord;
 

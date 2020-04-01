@@ -1,6 +1,6 @@
 <?php
 
-namespace Codew47\Wallet\Value;
+namespace Blockchain\Wallet\Value;
 
 class Error
 {

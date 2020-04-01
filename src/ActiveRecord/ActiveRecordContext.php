@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\ActiveRecord;
+namespace Blockchain\Wallet\ActiveRecord;
 
-use Codew47\Wallet\Client;
-use Codew47\Wallet\Exception\LogicException;
+use Blockchain\Wallet\Client;
+use Blockchain\Wallet\Exception\LogicException;
 
 class ActiveRecordContext
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Codew47\Wallet\Authentication;
+namespace Blockchain\Wallet\Authentication;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

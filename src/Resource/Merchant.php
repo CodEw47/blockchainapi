@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\MerchantActiveRecord;
-use Codew47\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\ActiveRecord\MerchantActiveRecord;
+use Blockchain\Wallet\Enum\ResourceType;
 
 class Merchant extends Resource
 {

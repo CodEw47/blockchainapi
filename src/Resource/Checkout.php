@@ -1,12 +1,12 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\CheckoutActiveRecord;
-use Codew47\Wallet\Enum\CheckoutStyle;
-use Codew47\Wallet\Enum\OrderType;
-use Codew47\Wallet\Enum\ResourceType;
-use Codew47\Wallet\Value\Money;
+use Blockchain\Wallet\ActiveRecord\CheckoutActiveRecord;
+use Blockchain\Wallet\Enum\CheckoutStyle;
+use Blockchain\Wallet\Enum\OrderType;
+use Blockchain\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\Value\Money;
 
 class Checkout extends Resource
 {
@@ -112,7 +112,7 @@ class Checkout extends Resource
         $code_attribute = "data-code=\"$this->embedCode\"";
         $text_attrbute = empty($this->text) ? "" : "data-button-text=\"$this->text\"";
 
-        return "<div class=\"Codew47-button\" $code_attribute $text_attrbute></div><script src=\"https://www.Codew47.com/assets/button.js\" type=\"text/javascript\"></script>";
+        return "<div class=\"coinbase-button\" $code_attribute $text_attrbute></div><script src=\"https://www.coinbase.com/assets/button.js\" type=\"text/javascript\"></script>";
     }
 
     public function getType()

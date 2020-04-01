@@ -1,12 +1,12 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\OrderActiveRecord;
-use Codew47\Wallet\Enum\OrderStatus;
-use Codew47\Wallet\Enum\OrderType;
-use Codew47\Wallet\Enum\ResourceType;
-use Codew47\Wallet\Value\Money;
+use Blockchain\Wallet\ActiveRecord\OrderActiveRecord;
+use Blockchain\Wallet\Enum\OrderStatus;
+use Blockchain\Wallet\Enum\OrderType;
+use Blockchain\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\Value\Money;
 
 class Order extends Resource
 {

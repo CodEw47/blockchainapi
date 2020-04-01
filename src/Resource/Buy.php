@@ -1,10 +1,10 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\BuyActiveRecord;
-use Codew47\Wallet\Enum\ResourceType;
-use Codew47\Wallet\Value\Money;
+use Blockchain\Wallet\ActiveRecord\BuyActiveRecord;
+use Blockchain\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\Value\Money;
 
 class Buy extends Transfer
 {

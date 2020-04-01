@@ -1,10 +1,10 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\SellActiveRecord;
-use Codew47\Wallet\Enum\ResourceType;
-use Codew47\Wallet\Value\Money;
+use Blockchain\Wallet\ActiveRecord\SellActiveRecord;
+use Blockchain\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\Value\Money;
 
 class Sell extends Transfer
 {

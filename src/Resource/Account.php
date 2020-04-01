@@ -1,11 +1,11 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\AccountActiveRecord;
-use Codew47\Wallet\Enum\AccountType;
-use Codew47\Wallet\Enum\ResourceType;
-use Codew47\Wallet\Value\Money;
+use Blockchain\Wallet\ActiveRecord\AccountActiveRecord;
+use Blockchain\Wallet\Enum\AccountType;
+use Blockchain\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\Value\Money;
 
 class Account extends Resource
 {

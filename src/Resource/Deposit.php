@@ -1,9 +1,9 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Coinbase\Wallet\ActiveRecord\DepositActiveRecord;
-use Coinbase\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\ActiveRecord\DepositActiveRecord;
+use Blockchain\Wallet\Enum\ResourceType;
 
 class Deposit extends Transfer
 {

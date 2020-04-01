@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Coinbase\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\UserActiveRecord;
-use Codew47\Wallet\Enum\ResourceType;
+use Coinbase\Wallet\ActiveRecord\UserActiveRecord;
+use Coinbase\Wallet\Enum\ResourceType;
 
 class User extends Resource
 {

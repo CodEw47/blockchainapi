@@ -1,10 +1,10 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\Enum\CurrencyCode;
-use Codew47\Wallet\Value\Fee;
-use Codew47\Wallet\Value\Money;
+use Blockchain\Wallet\Enum\CurrencyCode;
+use Blockchain\Wallet\Value\Fee;
+use Blockchain\Wallet\Value\Money;
 
 abstract class Transfer extends Resource
 {

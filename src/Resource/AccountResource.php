@@ -1,8 +1,8 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-trait AccountResource
+trait AccountResource 
 {
     public function getAccountId()
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\ActiveRecord;
+namespace Blockchain\Wallet\ActiveRecord;
 
-use Codew47\Wallet\Resource\Order;
-use Codew47\Wallet\Resource\ResourceCollection;
+use Blockchain\Wallet\Resource\Order;
+use Blockchain\Wallet\Resource\ResourceCollection;
 
 trait CheckoutActiveRecord
 {

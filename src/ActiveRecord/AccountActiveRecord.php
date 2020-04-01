@@ -1,14 +1,14 @@
 <?php
 
-namespace Codew47\Wallet\ActiveRecord;
+namespace Blockchain\Wallet\ActiveRecord;
 
-use Codew47\Wallet\Resource\Address;
-use Codew47\Wallet\Resource\Buy;
-use Codew47\Wallet\Resource\Deposit;
-use Codew47\Wallet\Resource\ResourceCollection;
-use Codew47\Wallet\Resource\Sell;
-use Codew47\Wallet\Resource\Transaction;
-use Codew47\Wallet\Resource\Withdrawal;
+use Blockchain\Wallet\Resource\Address;
+use Blockchain\Wallet\Resource\Buy;
+use Blockchain\Wallet\Resource\Deposit;
+use Blockchain\Wallet\Resource\ResourceCollection;
+use Blockchain\Wallet\Resource\Sell;
+use Blockchain\Wallet\Resource\Transaction;
+use Blockchain\Wallet\Resource\Withdrawal;
 
 trait AccountActiveRecord
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Codew47\Wallet;
+namespace Blockchain\Wallet;
 
-use Codew47\Wallet\Authentication\Authentication;
-use Codew47\Wallet\Enum\Param;
-use Codew47\Wallet\Exception\HttpException;
+use Blockchain\Wallet\Authentication\Authentication;
+use Blockchain\Wallet\Enum\Param;
+use Blockchain\Wallet\Exception\HttpException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
@@ -183,7 +183,7 @@ class HttpClient
         }
 
         $defaultHeaders = [
-            'User-Agent' => 'Codew47/php/'.Client::VERSION,
+            'User-Agent' => 'coinbase/php/'.Client::VERSION,
             'CB-VERSION' => $this->apiVersion,
             'Content-Type' => 'application/json',
         ];

@@ -1,17 +1,17 @@
 <?php
 
-namespace Codew47\Wallet;
+namespace Blockchain\Wallet;
 
-use Codew47\Wallet\Authentication\ApiKeyAuthentication;
-use Codew47\Wallet\Authentication\Authentication;
-use Codew47\Wallet\Authentication\OAuthAuthentication;
+use Blockchain\Wallet\Authentication\ApiKeyAuthentication;
+use Blockchain\Wallet\Authentication\Authentication;
+use Blockchain\Wallet\Authentication\OAuthAuthentication;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface;
 use Psr\Log\LoggerInterface;
 
 class Configuration
 {
-    const DEFAULT_API_URL = 'https://api.Codew47.com';
+    const DEFAULT_API_URL = 'https://api.coinbase.com';
     const DEFAULT_API_VERSION = '2016-02-01';
 
     private $authentication;
@@ -55,7 +55,7 @@ class Configuration
         $this->authentication = $authentication;
         $this->apiUrl = self::DEFAULT_API_URL;
         $this->apiVersion = self::DEFAULT_API_VERSION;
-        $this->caBundle = __DIR__.'/../etc/ca-Codew47.crt';
+        $this->caBundle = __DIR__.'/../etc/ca-coinbase.crt';
     }
 
     /** @return HttpClient */

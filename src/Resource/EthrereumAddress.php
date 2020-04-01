@@ -1,7 +1,7 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
-use Codew47\Wallet\Enum\ResourceType;
+namespace Blockchain\Wallet\Resource;
+use Blockchain\Wallet\Enum\ResourceType;
 
 class EthrereumAddress extends Resource
 {

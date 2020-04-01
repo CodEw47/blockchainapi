@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\Resource;
+namespace Blockchain\Wallet\Resource;
 
-use Codew47\Wallet\ActiveRecord\AddressActiveRecord;
-use Codew47\Wallet\Enum\ResourceType;
+use Blockchain\Wallet\ActiveRecord\AddressActiveRecord;
+use Blockchain\Wallet\Enum\ResourceType;
 
 class Address extends Resource
 {

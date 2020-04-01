@@ -1,9 +1,9 @@
 <?php
 
-namespace Codew47\Wallet\Exception;
+namespace Blockchain\Wallet\Exception;
 
-use Codew47\Wallet\Enum\ErrorCode;
-use Codew47\Wallet\Value\Error;
+use Blockchain\Wallet\Enum\ErrorCode;
+use Blockchain\Wallet\Value\Error;
 use GuzzleHttp\Exception\RequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
