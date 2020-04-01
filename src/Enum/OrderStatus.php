@@ -1,6 +1,6 @@
 <?php
 
-namespace Coinbase\Wallet\Enum;
+namespace Codew47\Wallet\Enum;
 
 /**
  * Supported order statuses.

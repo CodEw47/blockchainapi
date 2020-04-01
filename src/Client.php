@@ -1,28 +1,28 @@
 <?php
 
-namespace Coinbase\Wallet;
+namespace Codew47\Wallet;
 
-use Coinbase\Wallet\ActiveRecord\ActiveRecordContext;
-use Coinbase\Wallet\Enum\Param;
-use Coinbase\Wallet\Resource\Account;
-use Coinbase\Wallet\Resource\Address;
-use Coinbase\Wallet\Resource\Buy;
-use Coinbase\Wallet\Resource\Checkout;
-use Coinbase\Wallet\Resource\CurrentUser;
-use Coinbase\Wallet\Resource\Deposit;
-use Coinbase\Wallet\Resource\Merchant;
-use Coinbase\Wallet\Resource\Order;
-use Coinbase\Wallet\Resource\PaymentMethod;
-use Coinbase\Wallet\Resource\Resource;
-use Coinbase\Wallet\Resource\ResourceCollection;
-use Coinbase\Wallet\Resource\Sell;
-use Coinbase\Wallet\Resource\Transaction;
-use Coinbase\Wallet\Resource\User;
-use Coinbase\Wallet\Resource\Withdrawal;
-use Coinbase\Wallet\Resource\Notification;
+use Codew47\Wallet\ActiveRecord\ActiveRecordContext;
+use Codew47\Wallet\Enum\Param;
+use Codew47\Wallet\Resource\Account;
+use Codew47\Wallet\Resource\Address;
+use Codew47\Wallet\Resource\Buy;
+use Codew47\Wallet\Resource\Checkout;
+use Codew47\Wallet\Resource\CurrentUser;
+use Codew47\Wallet\Resource\Deposit;
+use Codew47\Wallet\Resource\Merchant;
+use Codew47\Wallet\Resource\Order;
+use Codew47\Wallet\Resource\PaymentMethod;
+use Codew47\Wallet\Resource\Resource;
+use Codew47\Wallet\Resource\ResourceCollection;
+use Codew47\Wallet\Resource\Sell;
+use Codew47\Wallet\Resource\Transaction;
+use Codew47\Wallet\Resource\User;
+use Codew47\Wallet\Resource\Withdrawal;
+use Codew47\Wallet\Resource\Notification;
 
 /**
- * A client for interacting with the Coinbase API.
+ * A client for interacting with the Codew47 API.
  *
  * All methods marked as supporting pagination parameters support the following
  * parameters:
@@ -33,7 +33,7 @@ use Coinbase\Wallet\Resource\Notification;
  *  * ending_before (string)
  *  * fetch_all (Boolean)
  *
- * @link https://developers.coinbase.com/api/v2
+ * @link https://developers.Codew47.com/api/v2
  */
 class Client
 {
@@ -43,9 +43,9 @@ class Client
     private $mapper;
 
     /**
-     * Creates a new Coinbase client.
+     * Creates a new Codew47 client.
      *
-     * @return Client A new Coinbase client
+     * @return Client A new Codew47 client
      */
     public static function create(Configuration $configuration)
     {
@@ -747,7 +747,7 @@ class Client
     }
 
     /**
-     * Verifies the authenticity of a merchant callback from Coinbase
+     * Verifies the authenticity of a merchant callback from Codew47
      *
      * @return Boolean
      */

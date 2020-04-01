@@ -1,10 +1,10 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-use Coinbase\Wallet\ActiveRecord\PaymentMethodActiveRecord;
-use Coinbase\Wallet\Enum\PaymentMethodType;
-use Coinbase\Wallet\Enum\ResourceType;
+use Codew47\Wallet\ActiveRecord\PaymentMethodActiveRecord;
+use Codew47\Wallet\Enum\PaymentMethodType;
+use Codew47\Wallet\Enum\ResourceType;
 
 class PaymentMethod extends Resource
 {

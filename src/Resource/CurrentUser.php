@@ -1,8 +1,8 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-use Coinbase\Wallet\ActiveRecord\CurrentUserActiveRecord;
+use Codew47\Wallet\ActiveRecord\CurrentUserActiveRecord;
 
 class CurrentUser extends User
 {

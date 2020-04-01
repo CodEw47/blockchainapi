@@ -1,39 +1,39 @@
 <?php
 
-namespace Coinbase\Wallet;
+namespace Codew47\Wallet;
 
-use Coinbase\Wallet\Enum\ResourceType;
-use Coinbase\Wallet\Exception\LogicException;
-use Coinbase\Wallet\Exception\RuntimeException;
-use Coinbase\Wallet\Resource\Account;
-use Coinbase\Wallet\Resource\Address;
-use Coinbase\Wallet\Resource\Application;
-use Coinbase\Wallet\Resource\BitcoinAddress;
-use Coinbase\Wallet\Resource\BitcoinCashAddress;
-use Coinbase\Wallet\Resource\Buy;
-use Coinbase\Wallet\Resource\Checkout;
-use Coinbase\Wallet\Resource\CurrentUser;
-use Coinbase\Wallet\Resource\Deposit;
-use Coinbase\Wallet\Resource\Email;
-use Coinbase\Wallet\Resource\EthereumNetwork;
-use Coinbase\Wallet\Resource\EthrereumAddress;
-use Coinbase\Wallet\Resource\LitecoinAddress;
-use Coinbase\Wallet\Resource\LitecoinNetwork;
-use Coinbase\Wallet\Resource\Merchant;
-use Coinbase\Wallet\Resource\Order;
-use Coinbase\Wallet\Resource\PaymentMethod;
-use Coinbase\Wallet\Resource\Resource;
-use Coinbase\Wallet\Resource\ResourceCollection;
-use Coinbase\Wallet\Resource\Sell;
-use Coinbase\Wallet\Resource\Transaction;
-use Coinbase\Wallet\Resource\User;
-use Coinbase\Wallet\Resource\Withdrawal;
-use Coinbase\Wallet\Resource\Notification;
-use Coinbase\Wallet\Resource\BitcoinNetwork;
-use Coinbase\Wallet\Resource\BitcoinCashNetwork;
-use Coinbase\Wallet\Value\Fee;
-use Coinbase\Wallet\Value\Money;
-use Coinbase\Wallet\Value\Network;
+use Codew47\Wallet\Enum\ResourceType;
+use Codew47\Wallet\Exception\LogicException;
+use Codew47\Wallet\Exception\RuntimeException;
+use Codew47\Wallet\Resource\Account;
+use Codew47\Wallet\Resource\Address;
+use Codew47\Wallet\Resource\Application;
+use Codew47\Wallet\Resource\BitcoinAddress;
+use Codew47\Wallet\Resource\BitcoinCashAddress;
+use Codew47\Wallet\Resource\Buy;
+use Codew47\Wallet\Resource\Checkout;
+use Codew47\Wallet\Resource\CurrentUser;
+use Codew47\Wallet\Resource\Deposit;
+use Codew47\Wallet\Resource\Email;
+use Codew47\Wallet\Resource\EthereumNetwork;
+use Codew47\Wallet\Resource\EthrereumAddress;
+use Codew47\Wallet\Resource\LitecoinAddress;
+use Codew47\Wallet\Resource\LitecoinNetwork;
+use Codew47\Wallet\Resource\Merchant;
+use Codew47\Wallet\Resource\Order;
+use Codew47\Wallet\Resource\PaymentMethod;
+use Codew47\Wallet\Resource\Resource;
+use Codew47\Wallet\Resource\ResourceCollection;
+use Codew47\Wallet\Resource\Sell;
+use Codew47\Wallet\Resource\Transaction;
+use Codew47\Wallet\Resource\User;
+use Codew47\Wallet\Resource\Withdrawal;
+use Codew47\Wallet\Resource\Notification;
+use Codew47\Wallet\Resource\BitcoinNetwork;
+use Codew47\Wallet\Resource\BitcoinCashNetwork;
+use Codew47\Wallet\Value\Fee;
+use Codew47\Wallet\Value\Money;
+use Codew47\Wallet\Value\Network;
 use Psr\Http\Message\ResponseInterface;
 
 
@@ -125,7 +125,7 @@ class Mapper
         $to = $transaction->getTo();
         if ($to && !$to instanceof Email && !$to instanceof BitcoinAddress && !$to instanceof LitecoinAddress && !$to instanceof EthrereumAddress && !$to instanceof BitcoinCashAddress  && !$to instanceof Account) {
             throw new LogicException(
-                'The Coinbase API only accepts transactions to an account, email, bitcoin address, bitcoin cash address, litecoin address, or ethereum address'
+                'The Codew47 API only accepts transactions to an account, email, bitcoin address, bitcoin cash address, litecoin address, or ethereum address'
             );
         }
 
@@ -177,7 +177,7 @@ class Mapper
         // validate
         if ($buy->getAmount() && $buy->getTotal()) {
             throw new LogicException(
-                'The Coinbase API accepts buys with either an amount or a total, but not both'
+                'The Codew47 API accepts buys with either an amount or a total, but not both'
             );
         }
 
@@ -232,7 +232,7 @@ class Mapper
         // validate
         if ($sell->getAmount() && $sell->getTotal()) {
             throw new LogicException(
-                'The Coinbase API accepts sells with either an amount or a total, but not both'
+                'The Codew47 API accepts sells with either an amount or a total, but not both'
             );
         }
 

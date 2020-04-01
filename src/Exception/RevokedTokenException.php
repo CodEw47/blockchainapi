@@ -1,6 +1,6 @@
 <?php
 
-namespace Coinbase\Wallet\Exception;
+namespace Codew47\Wallet\Exception;
 
 class RevokedTokenException extends UnauthorizedException
 {

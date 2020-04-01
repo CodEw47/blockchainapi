@@ -1,6 +1,6 @@
 <?php
 
-namespace Coinbase\Wallet\Authentication;
+namespace Codew47\Wallet\Authentication;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -68,7 +68,7 @@ class ApiKeyAuthentication implements Authentication
 
     protected function getTimestamp()
     {
-        $json = file_get_contents('https://api.coinbase.com/v2/time');
+        $json = file_get_contents('https://api.Codew47.com/v2/time');
         $obj = json_decode($json);
         return $obj->data->epoch;
     }

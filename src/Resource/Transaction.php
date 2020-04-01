@@ -1,14 +1,14 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-use Coinbase\Wallet\ActiveRecord\TransactionActiveRecord;
-use Coinbase\Wallet\Enum\CurrencyCode;
-use Coinbase\Wallet\Enum\ResourceType;
-use Coinbase\Wallet\Enum\TransactionStatus;
-use Coinbase\Wallet\Enum\TransactionType;
-use Coinbase\Wallet\Value\Money;
-use Coinbase\Wallet\Value\Network;
+use Codew47\Wallet\ActiveRecord\TransactionActiveRecord;
+use Codew47\Wallet\Enum\CurrencyCode;
+use Codew47\Wallet\Enum\ResourceType;
+use Codew47\Wallet\Enum\TransactionStatus;
+use Codew47\Wallet\Enum\TransactionType;
+use Codew47\Wallet\Value\Money;
+use Codew47\Wallet\Value\Network;
 
 class Transaction extends Resource
 {

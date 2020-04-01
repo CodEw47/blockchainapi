@@ -1,7 +1,7 @@
 <?php
 
-namespace Coinbase\Wallet\Exception;
+namespace Codew47\Wallet\Exception;
 
-interface Exception 
+interface Exception
 {
 }

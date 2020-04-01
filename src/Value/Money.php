@@ -1,8 +1,8 @@
 <?php
 
-namespace Coinbase\Wallet\Value;
+namespace Codew47\Wallet\Value;
 
-use Coinbase\Wallet\Enum\CurrencyCode;
+use Codew47\Wallet\Enum\CurrencyCode;
 
 class Money implements \JsonSerializable
 {
@@ -34,7 +34,7 @@ class Money implements \JsonSerializable
     {
         return $this->currency;
     }
-    
+
     /**
     * @return array
     */

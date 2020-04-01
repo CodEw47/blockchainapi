@@ -1,9 +1,9 @@
 <?php
 
-namespace Coinbase\Wallet\ActiveRecord;
+namespace Codew47\Wallet\ActiveRecord;
 
-use Coinbase\Wallet\Client;
-use Coinbase\Wallet\Exception\LogicException;
+use Codew47\Wallet\Client;
+use Codew47\Wallet\Exception\LogicException;
 
 class ActiveRecordContext
 {

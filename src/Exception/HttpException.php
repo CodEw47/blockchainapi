@@ -1,9 +1,9 @@
 <?php
 
-namespace Coinbase\Wallet\Exception;
+namespace Codew47\Wallet\Exception;
 
-use Coinbase\Wallet\Enum\ErrorCode;
-use Coinbase\Wallet\Value\Error;
+use Codew47\Wallet\Enum\ErrorCode;
+use Codew47\Wallet\Value\Error;
 use GuzzleHttp\Exception\RequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

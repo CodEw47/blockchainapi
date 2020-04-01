@@ -1,8 +1,8 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-trait AccountResource 
+trait AccountResource
 {
     public function getAccountId()
     {

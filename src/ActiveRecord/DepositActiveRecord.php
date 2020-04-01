@@ -1,8 +1,8 @@
 <?php
 
-namespace Coinbase\Wallet\ActiveRecord;
+namespace Codew47\Wallet\ActiveRecord;
 
-trait DepositActiveRecord 
+trait DepositActiveRecord
 {
     use BaseActiveRecord;
 

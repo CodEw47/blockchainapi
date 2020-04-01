@@ -5,10 +5,10 @@
  * Time: 11:30
  */
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-use Coinbase\Wallet\Enum\ResourceType;
-use Coinbase\Wallet\Resource\Resource;
+use Codew47\Wallet\Enum\ResourceType;
+use Codew47\Wallet\Resource\Resource;
 
 class BitcoinCashNetwork extends Resource
 {

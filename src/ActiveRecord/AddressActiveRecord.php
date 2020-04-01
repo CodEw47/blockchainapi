@@ -1,9 +1,9 @@
 <?php
 
-namespace Coinbase\Wallet\ActiveRecord;
+namespace Codew47\Wallet\ActiveRecord;
 
-use Coinbase\Wallet\Resource\ResourceCollection;
-use Coinbase\Wallet\Resource\Transaction;
+use Codew47\Wallet\Resource\ResourceCollection;
+use Codew47\Wallet\Resource\Transaction;
 
 trait AddressActiveRecord
 {

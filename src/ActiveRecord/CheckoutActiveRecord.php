@@ -1,9 +1,9 @@
 <?php
 
-namespace Coinbase\Wallet\ActiveRecord;
+namespace Codew47\Wallet\ActiveRecord;
 
-use Coinbase\Wallet\Resource\Order;
-use Coinbase\Wallet\Resource\ResourceCollection;
+use Codew47\Wallet\Resource\Order;
+use Codew47\Wallet\Resource\ResourceCollection;
 
 trait CheckoutActiveRecord
 {

@@ -1,7 +1,7 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
-use Coinbase\Wallet\Enum\ResourceType;
+namespace Codew47\Wallet\Resource;
+use Codew47\Wallet\Enum\ResourceType;
 
 class LitecoinAddress extends Resource
 {

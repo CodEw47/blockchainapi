@@ -1,6 +1,6 @@
 <?php
 
-namespace Coinbase\Wallet\Value;
+namespace Codew47\Wallet\Value;
 
 class Error
 {

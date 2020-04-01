@@ -1,8 +1,8 @@
 <?php
 
-namespace Coinbase\Wallet\Authentication;
+namespace Codew47\Wallet\Authentication;
 
-use Coinbase\Wallet\Exception\LogicException;
+use Codew47\Wallet\Exception\LogicException;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

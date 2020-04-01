@@ -3,10 +3,10 @@
  * Created by: KAMAELUA <kamaelua@gmail.com>
  */
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
 
-use Coinbase\Wallet\Enum\ResourceType;
+use Codew47\Wallet\Enum\ResourceType;
 
 class BitcoinCashAddress extends Resource
 {

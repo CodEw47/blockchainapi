@@ -1,9 +1,9 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-use Coinbase\Wallet\ActiveRecord\WithdrawalActiveRecord;
-use Coinbase\Wallet\Enum\ResourceType;
+use Codew47\Wallet\ActiveRecord\WithdrawalActiveRecord;
+use Codew47\Wallet\Enum\ResourceType;
 
 class Withdrawal extends Transfer
 {

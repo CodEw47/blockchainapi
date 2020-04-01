@@ -1,10 +1,10 @@
 <?php
 
-namespace Coinbase\Wallet\Resource;
+namespace Codew47\Wallet\Resource;
 
-use Coinbase\Wallet\Enum\CurrencyCode;
-use Coinbase\Wallet\Value\Fee;
-use Coinbase\Wallet\Value\Money;
+use Codew47\Wallet\Enum\CurrencyCode;
+use Codew47\Wallet\Value\Fee;
+use Codew47\Wallet\Value\Money;
 
 abstract class Transfer extends Resource
 {
